@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2015 by dvherrera (http://jsbin.com/mifedo/2/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+  <script>
+    d3.csv("https://github.com/dvherrera/D3/blob/master/data.csv", function(myArrayOfObjects) {
+      myArrayOfObjects.forEach(function (d){
+        console.log(d.x + "," + d.y);
+      });
+    });
+  </script>
+
+</body>
